@@ -140,7 +140,7 @@ background-color: white;
 }
 .mujeres__section--compra{
 
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 
@@ -223,6 +223,14 @@ background-color: white;
 
 }
 
+.section__baner--mujer2{
+
+    padding: 400px 300px 300px 400px ;
+
+    border: #707B7C solid 5px ;
+
+    margin: 100px 0px ;
+}
 
 button{
     padding: 15px 40px 15px 40px;
