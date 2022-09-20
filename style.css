@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul{
+    list-style: none;
+
+}
+
+
+#baner {
+    
+    
+    
+    display: flex;
+    justify-content: center;
+    
+
+ 
+}
+
+.banertexto{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 100%; 
+    text-decoration: none;
+
+}
+
+.header__div--publicidad{
+    
+    background-color: black ;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px ;
+   
+    
+}
+
+
+.header__inicio{
+   
+    width: 50%;
+    height: 100%;
+    padding: 25px 0px ;
+   
+   
+}
+
+.header__contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+
+}
+
+.menu{
+display: flex;
+justify-content: center;
+background-color: white;
+}
+
+
+.header__logo{
+    position: absolute; top: 15px; left: 35px;
+
+    width: 200px ;
+
+}
+
+.a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 110%; 
+   
+    
+}
+
+
+
+
+
+
+
+
+.mainInicio{
+   padding: 250px 300px 250px 300px; 
+   
+  
+   background-image: url(https://cdn.shopify.com/s/files/1/0229/0839/files/Diseno_sin_titulo_9a8bb8d4-9947-4ffe-bbd5-7f1e7e4dc113.png?format=webp&v=1648758290&width=1024) ;
+  
+   background-size: cover ;
+   background-position: center;
+ 
+
+   font-family:'Oswald', sans-serif;;
+   font-weight: 500;
+   color: white;
+   
+   text-align: center;
+   font-size: 40px;
+   
+   
+}
+
+.main__mujeres{
+    padding-bottom: 1000px;
+}
+
+.main__section--mujer{
+    padding: 400px 300px 300px 400px; 
+   
+  
+   background-image: url(https://cdn.shopify.com/s/files/1/0535/9093/files/arisescrunchv3bannerdesktop3_1600x.jpg?v=1662452746) ;
+    
+   background-size: cover ;
+   background-position: center;
+
+
+
+}
+
+.womens__texto{
+    color: #839192; 
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+.mujeres__section--compra{
+
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    margin-left: 35px ;
+    margin-top: 50px;
+
+
+}
+
+.mujeres__section--produtos{
+    display: grid;
+
+    grid-template-columns: repeat(5, 280px);
+    grid-template-rows: 480px ;
+
+  
+
+    gap: 20px;
+
+    
+
+    
+    margin: 15px 35px;
+
+    
+}
+
+.mujeres__griddcontainer{
+  display: grid;
+    margin-bottom: 25px;
+
+    position: relative;
+
+}
+
+
+
+.mujeres__griddcontainer :hover{
+    display: grid;
+
+
+  animation-name:sombra;
+  animation-duration: 2s ;
+    animation-fill-mode: forwards;
+    
+
+}
+
+@keyframes sombra{
+    0%{
+
+    }
+
+    100%{
+        filter: drop-shadow(5px 5px 15px black ); 
+        
+    }
+}
+
+.mujeres__productos{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.section__mujer--baner2{
+    padding: 400px 300px 300px 400px; 
+   
+  
+    background-image: url(https://i.ibb.co/cX2yT0x/banermujer-2.png) ;
+     
+    background-size: cover ;
+    background-position: center;
+
+    margin: 100px  0px;
+    
+ 
+
+
+}
+
+
+button{
+    padding: 15px 40px 15px 40px;
+    background-color: white;
+    margin: 10px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    text-decoration-color: black;
+    
+}
+
+.main__ADAPT{
+    padding: 2% 10%;
+    background-color:#839192   ;
+    border: 7px double white;
+
+    font-size: 20px ;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+}
+
+.informacion{
+    
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+
+#baner__movil{
+    background-color: white;
+    margin: 100px 5px;
+    padding-bottom: 250px;
+
+    
+
+}
+
+.main__texto{
+    display: flex;
+
+
+}
+
+.texto{
+    font-size: 70px;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    margin: 20px;
+}
+
+
+.main__ropa{
+    display: flex;
+    justify-content: space-around;
+  
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+    
+
+}
+
+
+.main__ropa--imagenes{
+
+width: 350px;
+height: 490px;
+}
+
+
+.fotercontainer{
+
+    background-color: #707B7C ;
+    color: black;
+
+    padding: 30px 50px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top: solid 5px #839192 ;
+
+    
+    
+}
+
+.footer__menu{
+
+
+    display: flex;
+
+
+
+    justify-content: space-between;
+
+    
+
+}
+
+.foter__logo{
+    display: flex;
+
+    width: 40%;
+    height: 40%;
+
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 100px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    margin: 5px;
+
+
+}
+
+.enlaces{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    
+    
+}
+
+.imag{
+    width: 100% 50% ;
+    
+
+    height: 60px ;
+
+}
+
+.seguinos{
+    display: flex;
+    
+
+    margin: 10px;
+    
+}
+
+.mapa{
+
+
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+
+}
+
+h5{
+    margin: 10px;
+
+    font-size: xx-large;
+
+
+}
+
+
+
+
