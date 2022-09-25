@@ -18,6 +18,7 @@ ul{
     display: flex;
     justify-content: center;
     
+    
 
  
 }
@@ -35,9 +36,8 @@ ul{
 .header__div--publicidad{
     
     background-color: black ;
-    width: 100%;
-    height: 100%;
-    padding: 10px 0px ;
+  
+    padding-top: 10px;
    
     
 }
@@ -47,7 +47,7 @@ ul{
    
     width: 50%;
     height: 100%;
-    padding: 25px 0px ;
+    padding: 25px 0px  ; padding-bottom: 15px;
    
    
 }
@@ -58,11 +58,10 @@ ul{
     align-items: center;
     justify-content: space-between;
 
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-
     
-
+   
+    
+ 
 }
 
 .menu{
@@ -73,47 +72,42 @@ background-color: white;
 
 
 .header__logo{
-    position: absolute; top: 15px; left: 35px;
+    position: absolute; top: 15px; left: 40px;
 
-    width: 200px ;
+    width: 250px ;
 
 }
 
 .a{
     text-decoration: none;
     color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 110%; 
+   font-family: 'Montserrat', sans-serif;
+   font-size: 17px;
+    font-weight: 700; 
    
+    
+}
+
+
+.titulo__baner{
+    font-size: 60px;
+    font-family:'Oswald', sans-serif;
+    font-weight: 500;
+}
+.carousel-caption{
+    bottom: 9.25rem;
+
+    color: blanchedalmond;
+    font-size: 30px;
+    font-family:'Oswald', sans-serif;
+    font-weight: 400;
     
 }
 
 
 
 
-
-
-
-
-.mainInicio{
-   padding: 250px 300px 250px 300px; 
-   
-  
-   background-image: url(https://cdn.shopify.com/s/files/1/0229/0839/files/Diseno_sin_titulo_9a8bb8d4-9947-4ffe-bbd5-7f1e7e4dc113.png?format=webp&v=1648758290&width=1024) ;
-  
-   background-size: cover ;
-   background-position: center;
- 
-
-   font-family:'Oswald', sans-serif;;
-   font-weight: 500;
-   color: white;
-   
-   text-align: center;
-   font-size: 40px;
-   
-   
-}
+/*Main mujer.html*/
 
 .main__mujeres{
     padding-bottom: 1000px;
@@ -134,13 +128,15 @@ background-color: white;
 
 .womens__texto{
     color: #839192; 
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
+
+    margin: 0px;
     
 }
 .mujeres__section--compra{
 
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 
@@ -223,11 +219,14 @@ background-color: white;
 
 }
 
-.section__baner--mujer2{
+.section__baner--streetwear{
 
     padding: 400px 300px 300px 400px ;
 
-    border: #707B7C solid 5px ;
+    background-image: url(https://i.ibb.co/xhSzBbb/banerstreetwear.png) ;
+     
+    background-size: cover ;
+    background-position: center;
 
     margin: 100px 0px ;
 }
@@ -242,6 +241,34 @@ button{
     font-size: medium;
     text-decoration-color: black;
     
+}
+
+/*Main hombre.html*/
+
+.main__bamer--hombre{
+    background-image: url(https://i.ibb.co/DfHtX9m/banerhombre1.jpg);
+
+
+    padding: 400px 300px 300px 400px; 
+   
+     
+    background-size: cover ;
+    background-position: center;
+
+    margin: 100px 0px ;
+}
+
+.main__bamer2--football{
+    background-image: url(https://i.ibb.co/XXCWHzC/banerfootbal.png);
+
+
+    padding: 400px 300px 300px 400px; 
+   
+     
+    background-size: cover ;
+    background-position: center;
+
+    margin: 100px 0px ;
 }
 
 .main__ADAPT{
@@ -294,6 +321,10 @@ button{
 }
 
 
+
+
+
+
 .main__ropa{
     display: flex;
     justify-content: space-around;
@@ -343,28 +374,12 @@ height: 490px;
 
 }
 
-.foter__logo{
-    display: flex;
 
-    width: 40%;
-    height: 40%;
-
-    justify-content: center;
-    flex-direction: column;
-
-    font-size: 100px;
-    font-weight: 400;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: black;
-    margin: 5px;
-
-
-}
 
 .enlaces{
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
     
     
@@ -388,16 +403,7 @@ height: 490px;
     
 }
 
-.mapa{
 
-
-
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-
-
-}
 
 h5{
     margin: 10px;
