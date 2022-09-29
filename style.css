@@ -97,7 +97,7 @@ background-color: white;
 .carousel-caption{
     bottom: 9.25rem;
 
-    color: blanchedalmond;
+    color: whitesmoke;
     font-size: 30px;
     font-family:'Oswald', sans-serif;
     font-weight: 400;
@@ -273,8 +273,9 @@ button{
 
 .main__ADAPT{
     padding: 2% 10%;
-    background-color:#839192   ;
-    border: 7px double white;
+    
+    background-color: whitesmoke   ;
+    border: 7px double grey;
 
     font-size: 20px ;
     color: black;
@@ -349,70 +350,123 @@ height: 490px;
 
 .fotercontainer{
 
-    background-color: #707B7C ;
+    background-color: whitesmoke ;
+    border: double grey 7px ;
     color: black;
+  
 
-    padding: 30px 50px;
+    display: flex;
+
+
+
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-top: solid 5px #839192 ;
 
-    
-    
-}
 
-.footer__menu{
-
-
-    display: flex;
-
-
-
+    justify-content: center;
     justify-content: space-between;
-
-    
-
-}
-
-
-
-.enlaces{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    
-    
-    
-    
+ 
     
 }
 
-.imag{
-    width: 100% 50% ;
-    
+.box__1{
+    padding: 50px 50px ;
 
-    height: 60px ;
-
-}
-
-.seguinos{
     display: flex;
     
+ 
+}
 
-    margin: 10px;
+
+
+.footer__logo{
+    width: 110%;
+    height: 100%;
+    object-fit: contain;
     
 }
 
 
+.box__2{
+   padding: 5%  10%;
 
-h5{
-    margin: 10px;
 
-    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+      
+}
+
+
+.links__redes{
+    width: fit-content;
+}
+.box2__img--container{
+    padding: 100%;
+    height: 10px;
+    object-fit: contain;
+    display: flex;
+    border: #839192 solid 5px;
+}
+
+
+.redes{
+
+    width: 40%;
+    margin-left: 80px;
+
+    object-fit: cover ;
+}
+
+
+.box__3{
+
+    
+    padding: 0px 50px;
+
+
+
+}
+
+.box3__text{
+    padding: 0px 50px;
+    object-fit: cover;
 
 
 }
 
 
+.box3__pagos{
+    display: inline-block;
+    border: #839192 solid 1px;
+
+}
 
 
+.box3__gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: 40px;
+    padding: 0%;
+
+    gap: 10px;
+
+ 
+
+
+}
+
+.box3__gridd-element{
+    display: grid;
+
+
+    
+}
+
+
+.tarjetas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
