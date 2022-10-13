@@ -1,0 +1,27 @@
+.footer{
+    max-width: 100%;
+    background-color: white;
+
+    display: flex;
+
+
+    .Footer__logo--container{
+
+        .footer__logo{
+            width: 50%;
+        }
+    }
+
+    .footer__links--container{
+        display: flex;
+        flex-direction: row;
+        .links{
+          width: 10%;  
+        }
+    }
+}
+
+
+.footer__label{
+    background-color: whitesmoke ;
+}

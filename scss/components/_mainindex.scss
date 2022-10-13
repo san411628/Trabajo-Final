@@ -1,0 +1,133 @@
+
+.carousel-item{
+    position: relative;
+
+
+
+ .carousel-caption{
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+
+    color: whitesmoke;
+    font-size: 30px;
+    font-family:'Oswald', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+    @media only screen and (min-width:300px) and (max-width:760px) {
+        font-size: 20px;
+        top: 20%;
+
+
+    }
+    @media only screen and (min-width:240px) and (max-width: 480px) {
+
+        font-size: 10px;
+        top: 20%;
+        
+        }   
+
+    .titulo__baner{
+        font-size: 60px;
+        font-family:'Oswald', sans-serif;
+        font-weight: 500;
+
+        @media only screen and (min-width:300px) and (max-width:760px) {
+            font-size: 40px;
+        }
+        @media only screen and (min-width:240px) and (max-width: 480px) {
+
+            font-size: 30px;
+            
+            }  
+
+        
+    }
+    .carrusel__buton--link{
+        
+
+
+        @media only screen and (min-width:240px) and (max-width: 480px) {
+
+            
+            width: 60px;
+            font-size: 30%;
+            
+         }  
+    }
+
+ }
+
+}
+
+.main__ADAPT{
+    padding: 2% 10%;
+    
+    background-color: whitesmoke   ;
+    border: 7px double grey;
+
+    font-size: 20px ;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+    @media only screen and (min-width:300px) and (max-width:760px) {
+        visibility: collapse;
+    }
+
+
+    .informacion{
+    
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        color: black;
+        margin-bottom: 10px;
+    }
+}
+
+#baner__movil{
+    background-color: white;
+    margin: 100px 5px;
+    padding-bottom: 250px;
+
+    .main__texto{
+        display: flex;
+    
+        .texto{
+            font-size: 70px;
+            font-weight: 500;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: black;
+            margin: 20px;
+            
+        }
+    
+    }
+
+    .main__ropa{
+        display: flex;
+        justify-content: space-around;
+      
+    
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        color: black;
+        font-size: 20px;
+        margin: 10px;
+        
+        .main__ropa--imagenes{
+
+            width: 350px;
+            height: 490px;
+
+         }
+    
+    }
+    
+
+}

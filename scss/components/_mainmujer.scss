@@ -1,0 +1,151 @@
+.main__mujeres{
+    padding-bottom: 1000px;
+
+    .main__section--mujer{
+        height: 700px;
+        width: 1580px; 
+       
+      
+       background-image: url(https://cdn.shopify.com/s/files/1/0535/9093/files/arisescrunchv3bannerdesktop3_1600x.jpg?v=1662452746) ;
+        
+       background-size: cover ;
+       background-position: center;
+    
+        
+
+        .baner__text{
+            @extend %banertext;
+        }
+    
+    }
+
+    .mujeres__section--compra{
+
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    
+        margin-left: 35px ;
+        margin-top: 50px;
+    
+    
+        .womens__texto{
+            color: #839192; 
+            font-size: 20px;
+            font-weight: 500;
+        
+            margin: 0px;
+            
+        }
+
+    }
+
+    .mujeres__section--produtos{
+        display: grid;
+    
+        grid-template-columns: repeat(5, 280px);
+        grid-template-rows: 480px ;
+    
+      
+    
+        gap: 20px;
+    
+        
+    
+        
+        margin: 15px 35px;
+    
+        .mujeres__griddcontainer{
+            display: grid;
+            margin-bottom: 25px;
+          
+            position: relative;
+          
+            .mujeres__productos{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+
+        } :hover{
+            display: grid;
+
+
+            animation-name:sombra;
+            animation-duration: 2s ;
+              animation-fill-mode: forwards;
+              
+          
+        } @keyframes sombra{
+            0%{
+        
+            }
+        
+            100%{
+                filter: drop-shadow(5px 5px 15px black ); 
+                
+            }
+
+           
+        }
+
+
+    }
+
+    .section__mujer--baner2{
+    height: 700px;
+    width: 1580px; 
+
+    
+  
+    background-image: url(https://i.ibb.co/cX2yT0x/banermujer-2.png) ;
+     
+    background-size: cover ;
+    background-position: center;
+
+    margin: 100px  0px;
+
+    display: flex;
+    
+
+ 
+        
+        
+
+  
+      .baner__text{
+
+        @extend %banertext;
+        padding: 50px;
+        color: white;
+
+  
+       }
+    
+       .baner__subtext{
+        color: white;
+
+       }
+    }
+
+    .section__baner--streetwear{
+
+        height: 700px;
+        width: 1580px; 
+    
+        background-image: url(https://i.ibb.co/xhSzBbb/banerstreetwear.png) ;
+         
+        background-size: cover ;
+        background-position: center;
+    
+        margin: 100px 0px ;
+
+        .baner__text{
+            @extend %banertext;
+
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+}
