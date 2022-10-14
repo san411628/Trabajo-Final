@@ -46,9 +46,9 @@
 
 
          .header__container--logo{
-              max-width: 300px;
-              max-height: 300px;
-              position: absolute; left: 20px; top: 4px;
+              max-width: 250px;
+              max-height: 250px;
+              position: absolute; left: 20px; top: 10px;
 
               @media only screen and (min-width: 250px ) and (max-width: 760px){
                 position: absolute; left: 0px; right: 0px; top: 4px;

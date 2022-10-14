@@ -34,11 +34,11 @@
   justify-content: space-between;
 }
 .menu .header__inicio .header__contenido .header__container--logo {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 250px;
   position: absolute;
   left: 20px;
-  top: 4px;
+  top: 10px;
 }
 @media only screen and (min-width: 250px) and (max-width: 760px) {
   .menu .header__inicio .header__contenido .header__container--logo {
