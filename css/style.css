@@ -296,7 +296,7 @@ ul {
   }
 }
 
-button {
+.button {
   padding: 15px 40px 15px 40px;
   background-color: white;
   margin: 10px;
@@ -339,24 +339,116 @@ button {
 }
 .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer {
   display: grid;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   position: relative;
 }
 .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .mujeres__productos {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: relative;
 }
-.main__mujeres .mujeres__section--produtos :hover {
-  display: grid;
-  animation-name: sombra;
-  animation-duration: 2s;
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__pheader--container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__pheader--container .main__product--header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__pheader--container .main__product--header .main__producto--regalo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  margin: 5px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__pheader--container .main__product--header .main__producto--regalo .regalo {
+  width: 380%;
+  object-fit: cover;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__pheader--container .main__product--header :focus {
+  background-color: gray;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation {
+  width: 95%;
+  height: 25%;
+  margin: 7px;
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: rgba(255, 253, 253, 0.75);
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive .main__interactive--text {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive .main__producto--agregar {
+  width: 100%;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive .main__producto--button {
+  border: #839192 solid 1px;
+  width: 20%;
+  color: black;
+  font-weight: 400;
+  margin: 5px;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer :hover + .main__interactive--animation {
+  display: inline-block;
+  animation-name: pull;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
-@keyframes sombra {
-  100% {
-    filter: drop-shadow(5px 5px 15px black);
+@keyframes pull {
+  0% {
+    transform: translateY(55px);
   }
+  100% {
+    transform: translateY(-70px);
+  }
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__producto--info {
+  border-left: black solid 5px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__producto--info .span__new {
+  margin-left: 5px;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__producto--info .span__valor {
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__producto--nombre {
+  width: 100%;
+  margin-top: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer:hover {
+  border: black solid 1px;
 }
 .main__mujeres .section__mujer--baner2 {
   height: 700px;
@@ -385,6 +477,12 @@ button {
 .main__mujeres .section__baner--streetwear .baner__text {
   justify-content: center;
   align-items: flex-start;
+}
+
+.main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive .main__producto--agregar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main__mujeres .main__section--mujer .baner__text, .main__mujeres .section__mujer--baner2 .baner__text, .main__mujeres .section__baner--streetwear .baner__text {
