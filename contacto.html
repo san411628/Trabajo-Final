@@ -28,37 +28,86 @@
     <title>Adapt | Indumentaria Deportiva</title>
 </head>
 <body>
-   
-
-    <header >
-        <div  class="header__div--publicidad"   > 
-        <nav  id="baner" >
+    <header class="header">
+        <section class="header__above">
+          <div class="above__texto">
+            <p> ¡Aprovecha Las Mejores Ofertas!</p>
+          </div>
+        </section>
+        <section class="header__menu--box">
+          <span>
+            <div>
+              <img src="" alt="">
+            </div>
+          </span>
+          <nav>
             
-           <a class="banertexto"><p>¡ Con tu subscripcion obtene 10% off en tu primera compra !</p></a> 
-        </nav>
-        </div>
-        <header class="menu" >
-        <nav class="header__inicio">
-            
-            <ul class="header__contenido" >
-            
-                <img src="imagenesgim/logoad.png" alt="logo" class="header__logo" >
-              
-                <li> <a class="a" href="index.html">INICIO</a></li>
-                <li><a  class="a" href="hombre.html">HOMBRE</a></li>
-                <li><a  class="a" href="mujer.html">MUJER</a></li>
-                <li><a class="a"  href="nuestroEquipo.html">NUESTRO EQUIPO</a></li>
-                <li><a class="a"  href="contacto.html">CONTACTO</a></li>
-              
-            </ul>
-        </nav>
-        </header>
+          </nav>
+        </section>
+      </header>
     
-    </header>
+ 
 
-<main>
+<main class="main__box--contacto">
+    <section class="box__contacto--usuario">
+        <nav class="main__usuario">
+            <span class="big__container">
+            <div class="img__container--box">
+                <img class="img__usuario" src="imagenesgim/logonuevo-removebg-preview.png" alt="ADAPT.logo">
+            </div>
+            <div class="big__container--info">
+                <p>Crea tu cuenta para recibir toda la información sobre los descuentos y productos increíbles que ADAPT tiene para vos.</p>
+            </div>
+          </span>
+
+            <form class="usuario__registro" action="/server/" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="registro__box1">
+                <label class="box__label" for="text">Correo Electronico</label>
+                <input type="text" placeholder="santiagoamino@gmail.com">
+                </div>
+                <div class="registro__box1">
+                <label class="box__label" for="text" >Contraseña</label>
+                <input type="text">
+                </div>
+                <div class="registro__box1">
+                    <label class="box__label" for="edad">Edad</label>
+                    <input type="number">
+                </div>
+                <div class="registro__box1">
+                    <label class="box__label" for="genero">Genero</label>
+                    <select name="Genero" id="Genero">
+                        <option value="">Hombre</option>
+                        <option value="">Mujer</option>
+                        <option value="">Otro</option>
+                    </select>
+                </div>
+                <div class="registro__box2">
+                    <span>El usuario acepta los <strong>terminos</strong> y <strong>condiciones</strong> de la web al registrarse en ADAPT indumentaria</span>
+                    <div class="container__radio">
+                    <label for="radio">Acepto</label>
+                    <input class="radio" type="radio">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">Registrarse</button>
+            </form>
+        </nav>
+    </section>
     <section>
-        <h2>Contacto</h2>
+        <nav class="main__usuario--ubicacion">
+            <span class="big__container--nav">
+                <div class="container__mapa--img">
+                    <img class="mapa--img" src="imagenesgim/local_logo-removebg-preview.png" >
+                </div>
+                <div class="container__ubicacion">
+                    <p>Tambien podes visitar nuestro local y observa vos mismo tu próxima compra.</p>
+                </div>
+            </span>
+            <div class="main__usuario--mapa">
+                <div class="usuario--mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2869487480284!2d-58.49012518500017!3d-34.546289380474384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6c049b27a89%3A0xb4aff81f5c83b76b!2sDot%20Baires%20Shopping!5e0!3m2!1ses!2sar!4v1666459269383!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </nav>
     </section>
 </main>
 
