@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="shortcut icon" href="imagenesgim/logofavicion-removebg-previewmuychico.png" type="image/x-icon">
@@ -32,83 +34,91 @@
 <body>
     
 
-
-
-
-  <header >
-    <div  class="header__div--publicidad"   > 
-    <nav  id="baner" >
-        
-       <a class="banertexto" href="#baner__movil"><p>! Aprovecha Las Mejores Ofertas ¡</p></a> 
-    </nav>
-    </div>
-    <header class="menu" >
-    <nav class="header__inicio">
-        
-        <ul class="header__contenido" >
-            
-            <div class="header__container--logo">
-            <img src="imagenesgim/logonuevo-removebg-preview.png" alt="logo" class="header__logo" >
-           </div>
-
-            <li class="header__links--media"> <a class="a" href="index.html">INICIO</a></li>
-            <li class="header__links--media"><a  class="a" href="hombre.html">HOMBRE</a></li>
-            <li class="header__links--media"><a  class="a" href="mujer.html">MUJER</a></li>
-            <li class="header__links--media"><a class="a"  href="nuestroEquipo.html">NUESTRO EQUIPO</a></li>
-            <li class="header__links--media"><a class="a"  href="contacto.html">CONTACTO</a></li>
-          
-            <form class="d-flex mt-3 container__searcher" role="search">
-                <input class="form-control me-2" type="search" placeholder="Musculosas, Full Sets, Buzos," aria-label="Search">
+  <header class="header">
+    <section class="header__above">
+      <div class="above__texto">
+        <p> ¡Aprovecha Las Mejores Ofertas!</p>
+      </div>
+    </section>
+    <section class="header__menu--box">
+      <span class="menu__span--logo">
+        <div class="span__logo--container">
+           
+          <img class="menu__logo" src="imagenesgim/logonuevo-removebg-preview.png" alt="ADAPT--logo" >
+        </div>
+      </span>
+      <nav class="header__menu--lista">
+        <ul class="menu__lista--container">
+            <li class="container__option--enlaces">
+                <a class="option__enlaces" href="hombre.html">HOMBRE</a>
+            </li>
+            <li  class="container__option--enlaces">
+                <a class="option__enlaces" href="mujer.html">MUJER</a>
+            </li>
+            <li  class="container__option--enlaces">
+                <a class="option__enlaces" href="nuestroEquipo.html">AYUDA</a>
+            </li>
+        </ul>
+      </nav>
+      <span class="header__span--user">
+        <div class="user__container">
+            <a class="user__box" href="user.html">
+                <img class="user" src="imagenesgim/usuario-removebg-preview.png">
+                <span class="user__cuenta">
+                <p class="registro">Registrarse</p>
+                </span>
+            </a>
+        </div>
+        <div class="span__user--searcher">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 searcher" type="search" placeholder="Camisetas, Musculosas,.." aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
               </form>
 
-            <div class="header__navbar">
-                <nav class="navbar">
-                    <div class="container-fluid">
-                      
-                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ADAPT | Indumentaria </h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="mujer.html">Mujer</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="hombre.html">Hombre</a>
-                            </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="nuestroEquipo.html">Nuestro Equipo</a>
-                              </li>
-
-                          </ul>
-                          <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                          </form>
-                        </div>
-                      </div>
+        </div>
+        <div class="header__navbar">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ADAPT | Indumentaria </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                  </nav>
-            </div>
-        </ul>
-    </nav>
-    </header>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="mujer.html">MUJER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hombre.html">HOMBRE</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="nuestroEquipo.html">AYUDA</a>
+                          </li>
 
-</header> «––>«
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+      </span>
+    </section>
+  </header>
 
-<main>
+
+<main class="main__index">
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
@@ -174,7 +184,63 @@
         <p>ADAPT es una marca inspirada en el uso de la ropa como una herramienta que impulse a nuestros usuarios a alcanzar sus deseos mas profundos y metas mas grandes. Las prendas ADAPT buscan acompañarte en tus situaciones de mayor estrés sin desgastarse, así para que uno logre sacar todo de cada entrenamiento.  Para esto nuestra selección impone el uso de material de alta tensión aerodinámica, para un movimiento libre, manteniendo un estilo de alta calidad y gran variedad. ADAPT es el futuro de la forma que tenias de entrenar.</p>
     </section>
 
-
+    <section>
+      <div>
+        <h3></h3>
+      </div>
+      <nav>
+        <div class="carousel">
+          <div class="carousel__contenedor">
+            <button aria-label="Anterior" class="carousel__anterior">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+    
+            <div class="carousel__lista">
+              <div class="carousel__elemento">
+                <img src="imagenesgim/hombrefit1.jpg" alt="Rock and Roll Hall of Fame">
+                <p>Rock and Roll Hall of Fame</p>
+              </div>
+              <div class="carousel__elemento">
+                <img src="imagenesgim/ropaoscura.jpg" alt="Constitution Square - Tower I">
+                <p>Constitution Square - Tower I</p>
+              </div>
+              <div class="carousel__elemento">
+                <img src="imagenesgim/ropacanchera4.jpg" alt="Empire State Building">
+                <p>Empire State Building</p>
+              </div>
+              <div class="carousel__elemento">
+                <img src="imagenesgim/hombrefit2.jpg" alt="Harmony Tower">
+                <p>Harmony Tower</p>
+              </div>
+      
+              <div class="carousel__elemento">
+                <img src="imagenesgim/ropacanchera2.jpg" alt="Empire State Building">
+                <p>Empire State Building</p>
+              </div>
+              <div class="carousel__elemento">
+                <img src="imagenesgim/ropalila.jpg" alt="Harmony Tower">
+                <p>Harmony Tower</p>
+              </div>
+              <div class="carousel__elemento">
+                <img src="imagenesgim/hombrefit5.jpg" alt="Empire State Building">
+                <p>Empire State Building</p>
+              </div>
+              <div class="carousel__elemento">
+                <img src="imagenesgim/ropacanchera5.jpg" alt="Harmony Tower">
+                <p>Harmony Tower</p>
+              </div>
+            </div>
+    
+            <button aria-label="Siguiente" class="carousel__siguiente">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+    
+          <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+      </div>
+      </nav>
+    </section>
 
     
 
@@ -211,7 +277,7 @@
    
   </div>
 </footer>
-</footer>
+
 <footer class="footer__label">
 <div>
  
@@ -219,8 +285,9 @@
   
 </div>
 </footer>
-
-
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>

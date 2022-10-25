@@ -29,88 +29,414 @@
 </head>
 <body>
    
-
-    <header >
-        <div  class="header__div--publicidad"   > 
-        <nav  id="baner" >
-            
-           <a class="banertexto"><p>¡ Con tu subscripcion obtene 10% off en tu primera compra !</p></a> 
-        </nav>
-        </div>
-        <header class="menu" >
-        <nav class="header__inicio">
-            
-            <ul class="header__contenido" >
-            
-                <img src="imagenesgim/logoad.png" alt="logo" class="header__logo" >
-              
-                <li> <a class="a" href="index.html">INICIO</a></li>
-                <li><a  class="a" href="hombre.html">HOMBRE</a></li>
-                <li><a  class="a" href="mujer.html">MUJER</a></li>
-                <li><a class="a"  href="nuestroEquipo.html">NUESTRO EQUIPO</a></li>
-                <li><a class="a"  href="contacto.html">CONTACTO</a></li>
-              
+    <header class="header">
+        <section class="header__above">
+          <div class="above__texto">
+            <p> ¡Aprovecha Las Mejores Ofertas!</p>
+          </div>
+        </section>
+        <section class="header__menu--box">
+          <span class="menu__span--logo">
+            <div class="span__logo--container">
+               
+              <img class="menu__logo" src="imagenesgim/logonuevo-removebg-preview.png" alt="ADAPT--logo" >
+            </div>
+          </span>
+          <nav class="header__menu--lista">
+            <ul class="menu__lista--container">
+                <li class="container__option--enlaces">
+                    <a class="option__enlaces" href="hombre.html">HOMBRE</a>
+                </li>
+                <li  class="container__option--enlaces">
+                    <a class="option__enlaces" href="mujer.html">MUJER</a>
+                </li>
+                <li  class="container__option--enlaces">
+                    <a class="option__enlaces" href="nuestroEquipo.html">AYUDA</a>
+                </li>
             </ul>
-        </nav>
-        </header>
+          </nav>
+          <span class="header__span--user">
+            <div class="user__container">
+                <a class="user__box" href="user.html">
+                    <img class="user" src="imagenesgim/usuario-removebg-preview.png">
+                    <span class="user__cuenta">
+                    <p class="registro">Registrarse</p>
+                    </span>
+                </a>
+            </div>
+            <div class="span__user--searcher">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 searcher" type="search" placeholder="Camisetas, Musculosas,.." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
     
-    </header>
+            </div>
+            <div class="header__navbar">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ADAPT | Indumentaria </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="mujer.html">MUJER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hombre.html">HOMBRE</a>
+                            </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="nuestroEquipo.html">AYUDA</a>
+                              </li>
+    
+                          </ul>
+                          <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+          </span>
+        </section>
+      </header>
 
-</header>
 
-<main>
-    <dir>
-
-    </dir>
-    <nav>
-        <ul>
-            
-        </ul>
+<main class="main__ayuda">
+  <section class="ayuda__section--sercher">
+    <nav class="section__searcher--box1">
+      <div class="searcher__box1--label">
+        <span class="label__text">COMO PODEMOS AYUDARTE?</span>
+      </div> 
+      <form class="searcher__container--buscador" action="/server/" method="post" enctype="application/x-www-form-urlencoded">
+         <fieldset class="container__buscador">
+           <input  class="buscador" type="text" placeholder="Buscar">
+           <button class="botton__lupa"></button>
+        </fieldset>
+      </form>
+      
     </nav>
+  </section>
+  <section class="ayuda__section--faq">
+    <nav class="section__faq--box">
+      <div class="box__gridcontainer">
+        <div class="grid__element">
+          <div class="big__container">
+          <span class="faq__img--container">
+            <img class="faq__img--element" src="https://images.ctfassets.net/mw19wi8id72e/5DvDdx5xcp9GUc02DGt3wx/caa2358374b662ddb520a25aaa1e4d4f/State_Outline.svg" >
+          </span>
+          <div class="faq__titel--box">
+            <span class="titel__text" >TERMINOS</span>
+            <span class="titel__text" >GENERALES</span>
+            
+          </div>
+          </div>
+          <div class="litle__container">
+            <dir class="box1__imag">
+              <span class="litle__container--box1">
+                <img class="litle__img" src="https://images.ctfassets.net/mw19wi8id72e/5DvDdx5xcp9GUc02DGt3wx/caa2358374b662ddb520a25aaa1e4d4f/State_Outline.svg" >
+              </span>
+           </dir>
+            <div class="box2__list">
+              <ul class="list__opciones--container">
+                <span class="opciones__header">
+                  <p>Terminos Generales</p>
+                </span>
+                <li class="opciones__datos">
+                  <p> Politica de Privacidad</p>
+                </li>
+                <li class="opciones__datos">
+                   <p> Uso de la Web </p>
+                </li>
+                <li class="opciones__datos">
+                  <p> Condiciones de Usuario </p>
+                </li>
+                <span class="opciones__informacion">
+                  <p>Mas Informacion</p>
+                </span>
+              </ul>
+             
+              
+            </div>
+          </div>
+        </div>
 
+        <div class="grid__element">
+          <div class="big__container">
+          <span class="faq__img--container">
+            <img class="faq__img--element" src="https://images.ctfassets.net/mw19wi8id72e/5WlTW5RIx0lQXzyNaV8VZB/6f5a34231456fe6eeacabedd60a39a58/Delivery.svg" >
+          </span>
+          <div class="faq__titel--box">
+            <span class="titel__text" >ENVIOS</span>
+           
+            
+          </div>
+          </div>
+          <div class="litle__container">
+            <dir class="box1__imag">
+              <span class="litle__container--box1">
+                <img class="litle__img" src="https://images.ctfassets.net/mw19wi8id72e/5WlTW5RIx0lQXzyNaV8VZB/6f5a34231456fe6eeacabedd60a39a58/Delivery.svg" >
+              </span>
+           </dir>
+            <div class="box2__list">
+              <ul class="list__opciones--container">
+                <span class="opciones__header">
+                  <p>ENVIOS</p>
+                </span>
+                <li class="opciones__datos">
+                  <p>Cómo Rastreo mi Producto?</p>
+                </li>
+                <li class="opciones__datos">
+                   <p> No Recibí mi Producto</p>
+                </li>
+                <li class="opciones__datos">
+                  <p> Cuándo Recibiré mi Producto?</p>
+                </li>
+                <span class="opciones__informacion">
+                  <p>Mas Informacion</p>
+                </span>
+              </ul>
+             
+              
+            </div>
+          </div>
+        </div>
 
+        <div class="grid__element">
+          <div class="big__container">
+          <span class="faq__img--container">
+            <img class="faq__img--element" src="https://images.ctfassets.net/mw19wi8id72e/59NzKKUS2smR3QfQypoTEB/e3d6e74e0aac7136db607547e42a07d4/Return.svg" >
+          </span>
+          <div class="faq__titel--box">
+            <span class="titel__text" >DEVOLUCIONES</span>
+            
+          </div>
+          </div>
+          <div class="litle__container">
+            <dir class="box1__imag">
+              <span class="litle__container--box1">
+                <img class="litle__img" src="https://images.ctfassets.net/mw19wi8id72e/59NzKKUS2smR3QfQypoTEB/e3d6e74e0aac7136db607547e42a07d4/Return.svg" >
+              </span>
+           </dir>
+            <div class="box2__list">
+              <ul class="list__opciones--container">
+                <span class="opciones__header">
+                  <p>Devoluciones</p>
+                </span>
+                <li class="opciones__datos">
+                  <p>Quiero Devolver mi Producto</p>
+                </li>
+                <li class="opciones__datos">
+                   <p>El Producto Llego Dañado</p>
+                </li>
+                <li class="opciones__datos">
+                  <p>El Producto no es lo que Esperaba </p>
+                </li>
+                <span class="opciones__informacion">
+                  <p>Mas Informacion</p>
+                </span>
+              </ul>
+             
+              
+            </div>
+          </div>
+        </div>
+        <div class="grid__element">
+          <div class="big__container">
+          <span class="faq__img--container">
+            <img class="faq__img--element" src="https://images.ctfassets.net/mw19wi8id72e/6APwHtxCylxG4TwbPt5vaf/56a7be23703f4866977d0e7472d4728b/State_Outline__Type_Gift_Card.svg" >
+          </span>
+          <div class="faq__titel--box">
+            <span class="titel__text" >OFERTAS</span>
+            <span class="titel__text" >ESPECIALES</span>
+            
+          </div>
+          </div>
+          <div class="litle__container">
+            <dir class="box1__imag">
+              <span class="litle__container--box1">
+                <img class="litle__img" src="https://images.ctfassets.net/mw19wi8id72e/6APwHtxCylxG4TwbPt5vaf/56a7be23703f4866977d0e7472d4728b/State_Outline__Type_Gift_Card.svg" >
+              </span>
+           </dir>
+            <div class="box2__list">
+              <ul class="list__opciones--container">
+                <span class="opciones__header">
+                  <p>Ofertas Especiales</p>
+                </span>
+                <li class="opciones__datos">
+                  <p>Descuentos de Tiempo Limitado</p>
+                </li>
+                <li class="opciones__datos">
+                   <p>Otras Promociones</p>
+                </li>
+                <li class="opciones__datos">
+                  <p>Cómo Canjeo mi Código?</p>
+                </li>
+                <span class="opciones__informacion">
+                  <p>Mas Informacion</p>
+                </span>
+              </ul>
+             
+              
+            </div>
+          </div>
+        </div>
+        <div class="grid__element">
+          <div class="big__container">
+          <span class="faq__img--container">
+            <img class="faq__img--element" src="https://images.ctfassets.net/mw19wi8id72e/7qHSjoV7yID7FypzLtloO3/bc7531769699e5189634c247f245a65d/State_Outline.svg" >
+          </span>
+          <div class="faq__titel--box">
+            <span class="titel__text" >MI USUARIO</span>
+
+            
+          </div>
+          </div>
+          <div class="litle__container">
+            <dir class="box1__imag">
+              <span class="litle__container--box1">
+                <img class="litle__img" src="https://images.ctfassets.net/mw19wi8id72e/7qHSjoV7yID7FypzLtloO3/bc7531769699e5189634c247f245a65d/State_Outline.svg" >
+              </span>
+           </dir>
+            <div class="box2__list">
+              <ul class="list__opciones--container">
+                <span class="opciones__header">
+                  <p>Mi Usuario</p>
+                </span>
+                <li class="opciones__datos">
+                  <p>Olvidé mi Contraseña</p>
+                </li>
+                <li class="opciones__datos">
+                   <p>Actualizar mis Datos</p>
+                </li>
+                <li class="opciones__datos">
+                  <p>Borrar mi Cuenta</p>
+                </li>
+                <span class="opciones__informacion">
+                  <p>Mas Informacion</p>
+                </span>
+              </ul>
+             
+              
+            </div>
+          </div>
+        </div>
+        <div class="grid__element">
+          <div class="big__container">
+          <span class="faq__img--container">
+            <img class="faq__img--element" src="https://images.ctfassets.net/mw19wi8id72e/XFVAhv2HEDSclXO9qjHsF/d0d48505a44e0ca34f7d78e570809920/State_Outline__Type_Default.svg" >
+          </span>
+          <div class="faq__titel--box">
+            <span class="titel__text" >MI</span>
+            <span class="titel__text" >PRODUCTO</span>
+            
+          </div>
+          </div>
+          <div class="litle__container">
+            <dir class="box1__imag">
+              <span class="litle__container--box1">
+                <img class="litle__img" src="https://images.ctfassets.net/mw19wi8id72e/XFVAhv2HEDSclXO9qjHsF/d0d48505a44e0ca34f7d78e570809920/State_Outline__Type_Default.svg" >
+              </span>
+           </dir>
+            <div class="box2__list">
+              <ul class="list__opciones--container">
+                <span class="opciones__header">
+                  <p>Mi Producto</p>
+                </span>
+                <li class="opciones__datos">
+                  <p>Como Puedo Cuidar mi Producto?</p>
+                </li>
+                <li class="opciones__datos">
+                   <p>Forma De Lavado</p>
+                </li>
+                <li class="opciones__datos">
+                  <p>Por qué ADAPT es Unico?</p>
+                </li>
+                <span class="opciones__informacion">
+                  <p>Mas Informacion</p>
+                </span>
+              </ul>
+             
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="section__preguntas--box">
+      <div class="box__preguntas">
+      <span class="preguntas__box--title">
+        <p>PREGUNTAS POPULARES</p>
+      </span>
+      <div class="preguntas__box--text">
+        <p>¿Tienes una pregunta? No hay problema.  Consulte nuestras preguntas más frecuentes a continuación para encontrar la respuesta que estás buscando. </p>
+      </div>
+     </div>
+      <nav class="section__grid--preguntas">
+        <div class="grid__pregunta--container">
+          <span>Tienen Envios a Todo el Pais?</span>
+        </div>
+        <div class="grid__pregunta--container">
+          <span>Cual es la Mejor Forma de Lavar Cada Prenda?</span>
+        </div>
+        <div class="grid__pregunta--container">
+          <span>Quiero Que me Avisen Cuando Llegue el Producto que Quiero</span>
+        </div>
+        <div class="grid__pregunta--container" >
+          <span>Que Metodos de Pago Manejan</span>
+        </div>
+      </nav>
+    </nav >
+
+    
+  </section>
 </main>
 
 
+<footer class="footer">
+  <div class="Footer__logo--container">
+    <img class="footer__logo" src="imagenesgim/logofavicion-removebg-previewmuychico.png" >
+  </div>
+
+  <div class="footer__links--container">
+    <a class="footer__a" href="https://www.instagram.com/" target="_blank"><img class="links" src="imagenesgim/instagram1.png" alt=""></a>
+    <a class="footer__a" href="https://www.youtube.com/" target="_blank"><img class="links" src="imagenesgim/youtubelogo1-removebg-preview.png" alt=""></a>
+    <a class="footer__a" href="https://github.com/" target="_blank"><img  class="links" src="imagenesgim/githublogo.png" alt=""></a>
+  </div>
+
+  <div class="footer__container--info">
+    <h5>Atencion al cliente</h5>
+    <p>¿Donde se encuentra mi producto?</p>
+    <p>Dudas frecuentes</p>
+   
+  </div>
+</footer>
+
+<footer class="footer__label">
+<div>
+ 
+  <p>© 2022 Todos Los Derechos Reservados | Adapt - Indumentaria </p>
+  
+</div>
+</footer>
 
 
 
-    <footer class="fotercontainer">
-        <nav class="box__1">
-            
-            <img class="footer__logo" src="imagenesgim/logofavicion-removebg-previewmuychico.png" alt="">
-            
-        
-        </nav>
-        <nav class="box__2">
-            <a target="_blank" class="links__redes" href="https://github.com/san411628/Trabajo-Final"> <img  class="redes" src="imagenesgim/githublogo.png" alt=""></a>
-            <a target="_blank"class="links__redes"  href="https://www.youtube.com/"> <img  class="redes" src="imagenesgim/youtubelogo1-removebg-preview.png" alt=""></a>
-            <a  target="_blank" class="links__redes"  href="https://www.instagram.com/"> <img  class="redes" src="imagenesgim/instagram1.png" alt=""> </a>
-        </nav>
+  
     
-        <nav class="box__3">
-            <div class="box3__text">
-                <p>Metodos de pago</p>
-            </div>
-            
-            <section class="box3__gridcontainer">
-            <div class="box3__gridd-element">
-                <img  class="tarjetas" src="imagenesgim/visacre-removebg-preview.png" alt="">
-            </div>
-            <div class="box3__gridd-element" >
-                <img class="tarjetas"  src="imagenesgim/mastercre-removebg-preview (1).png" alt="">
-            </div>
-            <div class="box3__gridd-element" >
-                <img class="tarjetas" src="imagenesgim/americanex-removebg-preview.png" alt="">
-            </div>
-            <div class="box3__gridd-element" >
-                <img class="tarjetas" src="imagenesgim/mastercard.png" alt="">
-            </div>
-            </section>
-        </nav>
-    </footer>
-    
-    
+  
+
     
     
 

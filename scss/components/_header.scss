@@ -1,11 +1,12 @@
 
     .header{
         width: 100%;
-        height: 120px;
+        height: 100px;
         display: flex;
         
         flex-direction: column;
         position: fixed;
+        z-index: 3;
         border: solid 1px darkgrey;
 
         .header__above{
@@ -23,138 +24,189 @@
                 font-size: 80%; 
                 text-decoration: none;
             }
+
+           
         }
 
         .header__menu--box{
             width: 100%;
             height: 100%;
             background-color: white;
-            border: 5px blue solid;
-            
-        }
-    }
- 
-   
-    #baner {
-    
-        display: flex;
-        justify-content: center;
-        
-        .banertexto{
-            color: white;
-            font-family: 'Roboto Mono', monospace;
-            font-weight: 200;
-            font-style: italic;
-            font-size: 100%; 
-            text-decoration: none;
-        
-        }  
-     
-    }
-    
-
-.menu{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    border: solid 1px darkgrey;
-
-    .header__inicio{
-   
-        width: 50%;
-        height: 100%;
-        padding: 25px 0px  ; padding-bottom: 15px;
-
-
-
-       
-        .header__contenido{
+            border-bottom: solid 1px grey;
+            position: relative;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            justify-content: space-between;
-
             
-
-
-         .header__container--logo{
-              max-width: 250px;
-              max-height: 250px;
-              position: absolute; left: 20px; top: 10px;
-
-              @media only screen and (min-width: 250px ) and (max-width: 760px){
-                position: absolute; left: 0px; right: 0px; top: 4px;
-
-            }
-            @media only screen and (min-width:240px) and (max-width: 480px) {
-
-                max-width: 200px;
-                max-height: 200px;
-                top: 40px ;
-                }   
+            .menu__span--logo{
+               width: 35%;
+               height: 100%;
               
-            .header__logo{
+               display: flex;
+               justify-content: center;
                 
-            
-                width: 100% ;
-            
+               .span__logo--container{
+                width: 50%;
+                height: 100%;
+             
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             
+                
+                    .menu__logo{
+                        
+                        object-fit: cover;
+                        width: 250%;
+                        height: 250%;
+                        padding-top: 30px;
+                    }
+                
+               }
             }
-         }
-            .header__links--media{
-                @media only screen and (min-width: 250px ) and (max-width: 760px){
-                    visibility: hidden;
-                }
-            
 
-            .a{
-                 text-decoration: none;
-                 color: black;
-                 font-family: 'Montserrat', sans-serif;
-                 font-size: 17px;
-                 font-weight: 700; 
-               
+            .header__menu--lista{          
+                width: 100% ;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                
+                .menu__lista--container{
+                    width: 60%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-around;
+
+                    .container__option--enlaces{
+                      
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    
+                        color: black;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 17px;
+                        font-weight: 600; 
+                        width: 15%;
+
+                        .option__enlaces{
+                            text-decoration: none;
+                            color: black ;
+                        } :hover{
+                            text-decoration: underline;
+
+                           
+                        }
+                    }
+                }
+
+                @media only screen and (min-width:300px) and (max-width: 780px) {   
+                    display: none;
+                 }
+            }
+
+            .header__span--user{
+                height: 100%;
+                width: 40%;
+                display: flex;
+
+                .user__container{
+                 height: 100%;
+                 width: 30%;  
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+
+                    .user__box{
+                        
+                        width: 25px;
+                        height: 25px;
+                        .user{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        } :hover + .user__cuenta{
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            
+                            
+
+                        }
+
+                        .user__cuenta{
+                            display: none;
+                           width: 80px;
+                           height: 35px;
+                          border: 1px solid gray;
+                           background-color:  white;
+                            margin-top: 5px;
+                           
+                           .registro{
+                            text-decoration: underline;
+                            font-size: 15px;
+                            color: black ;
+                            
+                           }
+                           
+                        }
+                    }
+                }
+
+                .span__user--searcher{
+                    width: 70%;
+                    height: 100%;
+                   margin-right: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .searcher{
+                        height: 50%;
+
+
+                    }
+
+                    @media only screen and (min-width:300px) and (max-width: 780px) {   
+                     display: none;
+                    }
+                }
+
+                .header__navbar{
+                    display: none;
+    
+                    @media only screen and  (min-width:481px) and (max-width: 760px) {
+    
+                     display: flex;
+                     }
+
+                    @media only screen and (min-width:300px) and (max-width: 480px) {
+    
+                        display: flex;
+                        
+        
+                            
+                            
+                      }
+
+                    .offcanvas{
+                        background-color: whitesmoke;
+                    }
+                }
+            }
+
+            @media only screen and (min-width:300px) and (max-width: 780px) {   
+               justify-content: space-evenly;
                 
              }
 
-
-            } 
-
-            .container__searcher{
-              
-                position: absolute;
-                right: 1px;
-                
-                @media only screen and (min-width: 250px ) and (max-width: 760px){
-                visibility: hidden;
-                }
-                
-            }
-            
-            .header__navbar{
-                display: none;
-
-                @media only screen and  (min-width:481px) and (max-width: 760px) {
-
-                display: flex;
-                
-
-                    
-                    
-                }
-                @media only screen and (min-width:240px) and (max-width: 480px) {
-
-                    display: flex;
-                    position: absolute; right: 20px;
-    
-                        
-                        
-                    }
-                .offcanvas{
-                    background-color: whitesmoke;
-                }
-            }
-
         }
+
+        @media only screen and (min-width:300px) and (max-width: 780px) {   
+            max-width: 50%;
+            
+         }
     }
- }
+ 
+   
+
     

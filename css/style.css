@@ -1,9 +1,10 @@
 .header {
   width: 100%;
-  height: 120px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   position: fixed;
+  z-index: 3;
   border: solid 1px darkgrey;
 }
 .header .header__above {
@@ -25,109 +26,153 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  border: 5px blue solid;
+  border-bottom: solid 1px grey;
+  position: relative;
+  display: flex;
 }
-
-#baner {
+.header .header__menu--box .menu__span--logo {
+  width: 35%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
-#baner .banertexto {
-  color: white;
-  font-family: "Roboto Mono", monospace;
-  font-weight: 200;
-  font-style: italic;
-  font-size: 100%;
-  text-decoration: none;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  border: solid 1px darkgrey;
-}
-.menu .header__inicio {
+.header .header__menu--box .menu__span--logo .span__logo--container {
   width: 50%;
   height: 100%;
-  padding: 25px 0px;
-  padding-bottom: 15px;
-}
-.menu .header__inicio .header__contenido {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
-.menu .header__inicio .header__contenido .header__container--logo {
-  max-width: 250px;
-  max-height: 250px;
-  position: absolute;
-  left: 20px;
-  top: 10px;
+.header .header__menu--box .menu__span--logo .span__logo--container .menu__logo {
+  object-fit: cover;
+  width: 250%;
+  height: 250%;
+  padding-top: 30px;
 }
-@media only screen and (min-width: 250px) and (max-width: 760px) {
-  .menu .header__inicio .header__contenido .header__container--logo {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 4px;
-  }
-}
-@media only screen and (min-width: 240px) and (max-width: 480px) {
-  .menu .header__inicio .header__contenido .header__container--logo {
-    max-width: 200px;
-    max-height: 200px;
-    top: 40px;
-  }
-}
-.menu .header__inicio .header__contenido .header__container--logo .header__logo {
+.header .header__menu--box .header__menu--lista {
   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
-@media only screen and (min-width: 250px) and (max-width: 760px) {
-  .menu .header__inicio .header__contenido .header__links--media {
-    visibility: hidden;
-  }
+.header .header__menu--box .header__menu--lista .menu__lista--container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
-.menu .header__inicio .header__contenido .header__links--media .a {
-  text-decoration: none;
+.header .header__menu--box .header__menu--lista .menu__lista--container .container__option--enlaces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 600;
+  width: 15%;
 }
-.menu .header__inicio .header__contenido .container__searcher {
-  position: absolute;
-  right: 1px;
+.header .header__menu--box .header__menu--lista .menu__lista--container .container__option--enlaces .option__enlaces {
+  text-decoration: none;
+  color: black;
 }
-@media only screen and (min-width: 250px) and (max-width: 760px) {
-  .menu .header__inicio .header__contenido .container__searcher {
-    visibility: hidden;
+.header .header__menu--box .header__menu--lista .menu__lista--container .container__option--enlaces :hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 300px) and (max-width: 780px) {
+  .header .header__menu--box .header__menu--lista {
+    display: none;
   }
 }
-.menu .header__inicio .header__contenido .header__navbar {
+.header .header__menu--box .header__span--user {
+  height: 100%;
+  width: 40%;
+  display: flex;
+}
+.header .header__menu--box .header__span--user .user__container {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__menu--box .header__span--user .user__container .user__box {
+  width: 25px;
+  height: 25px;
+}
+.header .header__menu--box .header__span--user .user__container .user__box .user {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header .header__menu--box .header__span--user .user__container .user__box :hover + .user__cuenta {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.header .header__menu--box .header__span--user .user__container .user__box .user__cuenta {
+  display: none;
+  width: 80px;
+  height: 35px;
+  border: 1px solid gray;
+  background-color: white;
+  margin-top: 5px;
+}
+.header .header__menu--box .header__span--user .user__container .user__box .user__cuenta .registro {
+  text-decoration: underline;
+  font-size: 15px;
+  color: black;
+}
+.header .header__menu--box .header__span--user .span__user--searcher {
+  width: 70%;
+  height: 100%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__menu--box .header__span--user .span__user--searcher .searcher {
+  height: 50%;
+}
+@media only screen and (min-width: 300px) and (max-width: 780px) {
+  .header .header__menu--box .header__span--user .span__user--searcher {
+    display: none;
+  }
+}
+.header .header__menu--box .header__span--user .header__navbar {
   display: none;
 }
 @media only screen and (min-width: 481px) and (max-width: 760px) {
-  .menu .header__inicio .header__contenido .header__navbar {
+  .header .header__menu--box .header__span--user .header__navbar {
     display: flex;
   }
 }
-@media only screen and (min-width: 240px) and (max-width: 480px) {
-  .menu .header__inicio .header__contenido .header__navbar {
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .header .header__menu--box .header__span--user .header__navbar {
     display: flex;
-    position: absolute;
-    right: 20px;
   }
 }
-.menu .header__inicio .header__contenido .header__navbar .offcanvas {
+.header .header__menu--box .header__span--user .header__navbar .offcanvas {
   background-color: whitesmoke;
 }
+@media only screen and (min-width: 300px) and (max-width: 780px) {
+  .header .header__menu--box {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 780px) {
+  .header {
+    max-width: 50%;
+  }
+}
 
-.carousel-item {
+.main__index {
+  padding-top: 110px;
+}
+.main__index .carousel-item {
   position: relative;
 }
-.carousel-item .carousel-caption {
+.main__index .carousel-item .carousel-caption {
   position: absolute;
   top: 40%;
   bottom: 50%;
@@ -138,40 +183,39 @@
   text-align: center;
 }
 @media only screen and (min-width: 300px) and (max-width: 760px) {
-  .carousel-item .carousel-caption {
+  .main__index .carousel-item .carousel-caption {
     font-size: 20px;
     top: 20%;
   }
 }
 @media only screen and (min-width: 240px) and (max-width: 480px) {
-  .carousel-item .carousel-caption {
+  .main__index .carousel-item .carousel-caption {
     font-size: 10px;
     top: 20%;
   }
 }
-.carousel-item .carousel-caption .titulo__baner {
+.main__index .carousel-item .carousel-caption .titulo__baner {
   font-size: 60px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
 @media only screen and (min-width: 300px) and (max-width: 760px) {
-  .carousel-item .carousel-caption .titulo__baner {
+  .main__index .carousel-item .carousel-caption .titulo__baner {
     font-size: 40px;
   }
 }
 @media only screen and (min-width: 240px) and (max-width: 480px) {
-  .carousel-item .carousel-caption .titulo__baner {
+  .main__index .carousel-item .carousel-caption .titulo__baner {
     font-size: 30px;
   }
 }
 @media only screen and (min-width: 240px) and (max-width: 480px) {
-  .carousel-item .carousel-caption .carrusel__buton--link {
+  .main__index .carousel-item .carousel-caption .carrusel__buton--link {
     width: 60px;
     font-size: 30%;
   }
 }
-
-.main__ADAPT {
+.main__index .main__ADAPT {
   padding: 2% 10%;
   background-color: whitesmoke;
   border: 7px double grey;
@@ -183,11 +227,11 @@
   font-weight: 400;
 }
 @media only screen and (min-width: 300px) and (max-width: 760px) {
-  .main__ADAPT {
+  .main__index .main__ADAPT {
     visibility: collapse;
   }
 }
-.main__ADAPT .informacion {
+.main__index .main__ADAPT .informacion {
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -195,23 +239,22 @@
   color: black;
   margin-bottom: 10px;
 }
-
-#baner__movil {
+.main__index #baner__movil {
   background-color: white;
   margin: 100px 5px;
   padding-bottom: 250px;
 }
-#baner__movil .main__texto {
+.main__index #baner__movil .main__texto {
   display: flex;
 }
-#baner__movil .main__texto .texto {
+.main__index #baner__movil .main__texto .texto {
   font-size: 70px;
   font-weight: 500;
   font-family: "Roboto Condensed", sans-serif;
   color: black;
   margin: 20px;
 }
-#baner__movil .main__ropa {
+.main__index #baner__movil .main__ropa {
   display: flex;
   justify-content: space-around;
   font-family: "Raleway", sans-serif;
@@ -220,7 +263,7 @@
   font-size: 20px;
   margin: 10px;
 }
-#baner__movil .main__ropa .main__ropa--imagenes {
+.main__index #baner__movil .main__ropa .main__ropa--imagenes {
   width: 350px;
   height: 490px;
 }
@@ -236,7 +279,7 @@ ul {
 
 .footer {
   max-width: 100%;
-  background-color: whitesmoke;
+  background-color: black;
   display: flex;
   justify-content: space-evenly;
 }
@@ -335,6 +378,7 @@ ul {
 
 .main__mujeres {
   padding-bottom: 100px;
+  padding-top: 110px;
 }
 .main__mujeres .main__section--mujer {
   height: 700px;
@@ -697,6 +741,7 @@ ul {
 
 .main__hombre {
   padding-bottom: 100px;
+  padding-top: 110px;
 }
 .main__hombre .main__section--hombre {
   height: 700px;
@@ -1181,6 +1226,285 @@ ul {
   justify-content: center;
   align-items: center;
   border: 5px whitesmoke solid;
+}
+
+.main__ayuda {
+  width: 100%;
+  height: 2000px;
+  padding-top: 110px;
+}
+.main__ayuda .ayuda__section--sercher {
+  width: 100%;
+  height: 34%;
+  position: relative;
+  background: url(https://images.ctfassets.net/mw19wi8id72e/37bTZXatimbjJIGJSNJ6uE/388b991316918e119aad559e6f674be3/Compressed-Image.jpg) center center/cover no-repeat;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+}
+.main__ayuda .ayuda__section--sercher .section__searcher--box1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__ayuda .ayuda__section--sercher .section__searcher--box1 .searcher__box1--label {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__ayuda .ayuda__section--sercher .section__searcher--box1 .searcher__box1--label .label__text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.main__ayuda .ayuda__section--sercher .section__searcher--box1 .searcher__container--buscador {
+  width: 100%;
+  height: 40%;
+}
+.main__ayuda .ayuda__section--sercher .section__searcher--box1 .searcher__container--buscador .container__buscador {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.main__ayuda .ayuda__section--sercher .section__searcher--box1 .searcher__container--buscador .container__buscador .buscador {
+  background: transparent;
+  width: 80%;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: lighter;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-image: initial;
+  padding: 1.1rem 3.2rem 1.1rem 0px;
+  margin: 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  outline: none;
+}
+.main__ayuda .ayuda__section--sercher .section__searcher--box1 .searcher__container--buscador .container__buscador .botton__lupa {
+  width: 2rem;
+  height: 2rem;
+  background: url(https://i.ibb.co/7tMNdBv/image-prev-ui.png) center center/cover no-repeat;
+  border: none;
+}
+.main__ayuda .ayuda__section--sercher::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0px;
+  z-index: -1;
+}
+.main__ayuda .ayuda__section--faq {
+  width: 100%;
+  height: 65%;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer {
+  width: 70%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element {
+  background-color: white;
+  border: 2px darkgray solid;
+  border-radius: 7%;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .big__container {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .big__container .faq__img--container {
+  width: 25%;
+  height: 25%;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .big__container .faq__img--container .faq__img--element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .big__container .faq__titel--box {
+  width: 100%;
+  height: 20%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .big__container .faq__titel--box .titel__text {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element :hover {
+  opacity: 0;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 7%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container .box1__imag {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container .box1__imag .litle__container--box1 {
+  width: 15%;
+  height: 100%;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container .box1__imag .litle__container--box1 .litle__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container .box2__list {
+  width: 100%;
+  height: 70%;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container .box2__list .list__opciones--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container .box2__list .list__opciones--container .opciones__header {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container .box2__list .list__opciones--container .opciones__datos {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element .litle__container .box2__list .list__opciones--container .opciones__informacion {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer .grid__element :hover {
+  opacity: 1;
+}
+.main__ayuda .ayuda__section--faq .section__faq--box .box__gridcontainer :hover {
+  background-color: whitesmoke;
+}
+.main__ayuda .ayuda__section--faq .section__preguntas--box {
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.main__ayuda .ayuda__section--faq .section__preguntas--box .box__preguntas {
+  width: 100%;
+  height: 30%;
+}
+.main__ayuda .ayuda__section--faq .section__preguntas--box .box__preguntas .preguntas__box--title {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.main__ayuda .ayuda__section--faq .section__preguntas--box .box__preguntas .preguntas__box--text {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.main__ayuda .ayuda__section--faq .section__preguntas--box .section__grid--preguntas {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 80px);
+  row-gap: 20px;
+  column-gap: 10px;
+  width: 100%;
+  height: 50%;
+}
+.main__ayuda .ayuda__section--faq .section__preguntas--box .section__grid--preguntas .grid__pregunta--container {
+  background-color: white;
+  border: 2px darkgray solid;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.main__ayuda .ayuda__section--faq .section__preguntas--box .section__grid--preguntas :hover {
+  background-color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */

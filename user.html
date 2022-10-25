@@ -35,14 +35,79 @@
           </div>
         </section>
         <section class="header__menu--box">
-          <span>
-            <div>
-              <img src="" alt="">
+          <span class="menu__span--logo">
+            <div class="span__logo--container">
+               
+              <img class="menu__logo" src="imagenesgim/logonuevo-removebg-preview.png" alt="ADAPT--logo" >
             </div>
           </span>
-          <nav>
-            
+          <nav class="header__menu--lista">
+            <ul class="menu__lista--container">
+                <li class="container__option--enlaces">
+                    <a class="option__enlaces" href="hombre.html">HOMBRE</a>
+                </li>
+                <li  class="container__option--enlaces">
+                    <a class="option__enlaces" href="mujer.html">MUJER</a>
+                </li>
+                <li  class="container__option--enlaces">
+                    <a class="option__enlaces" href="nuestroEquipo.html">AYUDA</a>
+                </li>
+            </ul>
           </nav>
+          <span class="header__span--user">
+            <div class="user__container">
+                <a class="user__box" href="user.html">
+                    <img class="user" src="imagenesgim/usuario-removebg-preview.png">
+                    <span class="user__cuenta">
+                    <p class="registro">Registrarse</p>
+                    </span>
+                </a>
+            </div>
+            <div class="span__user--searcher">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 searcher" type="search" placeholder="Camisetas, Musculosas,.." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+
+            </div>
+            <div class="header__navbar">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ADAPT | Indumentaria </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="mujer.html">MUJER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hombre.html">HOMBRE</a>
+                            </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="nuestroEquipo.html">AYUDA</a>
+                              </li>
+
+                          </ul>
+                          <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+          </span>
         </section>
       </header>
     
