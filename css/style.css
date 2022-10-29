@@ -279,9 +279,11 @@ ul {
 
 .footer {
   max-width: 100%;
-  background-color: black;
+  max-height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  border-top: whitesmoke solid 1px;
 }
 @media only screen and (min-width: 250px) and (max-width: 760px) {
   .footer {
@@ -289,11 +291,14 @@ ul {
     flex-direction: row;
   }
 }
-.footer .Footer__logo--container {
-  padding-right: 100px;
+.footer .footer__box--container {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 250px) and (max-width: 760px) {
-  .footer .Footer__logo--container {
+  .footer .footer__box--container .Footer__logo--container {
     display: flex;
     height: 150px;
     justify-content: center;
@@ -302,67 +307,123 @@ ul {
     margin: 20px;
   }
 }
-.footer .Footer__logo--container .footer__logo {
-  width: 50%;
+.footer .footer__box--container .Footer__logo--container .footer__logo {
+  width: 70%;
 }
 @media only screen and (min-width: 250px) and (max-width: 760px) {
-  .footer .Footer__logo--container .footer__logo {
+  .footer .footer__box--container .Footer__logo--container .footer__logo {
     width: 100%;
     height: 50%;
   }
 }
-.footer .footer__links--container {
+.footer .footer__box--container .footer__links--container {
   display: flex;
-  width: 200px;
-  height: 50px;
+  width: 30%;
+  height: 200px;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 @media only screen and (min-width: 250px) and (max-width: 760px) {
-  .footer .footer__links--container {
+  .footer .footer__box--container .footer__links--container {
     flex-direction: column;
     height: 200px;
     justify-content: space-evenly;
   }
 }
-.footer .footer__links--container .footer__a {
-  width: 50px;
-  height: 5px;
+.footer .footer__box--container .footer__links--container .container__info--titel {
+  width: 100%;
+  height: 15%;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
+.footer .footer__box--container .footer__links--container .container__info--titel .footer__titel {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+.footer .footer__box--container .footer__links--container .box__container--info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 35px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer .footer__box--container .footer__links--container .footer__a {
+  width: 60px;
+  height: 60px;
+  position: relative;
 }
 @media only screen and (min-width: 250px) and (max-width: 760px) {
-  .footer .footer__links--container .footer__a {
+  .footer .footer__box--container .footer__links--container .footer__a {
     flex-direction: column;
     height: 50px;
     justify-content: space-evenly;
   }
 }
-.footer .footer__links--container .footer__a .links {
+.footer .footer__box--container .footer__links--container .footer__a .links {
   width: 100%;
+  object-fit: contain;
+  position: absolute;
 }
-.footer .footer__container--info {
+.footer .footer__box--container .footer__container--info {
   width: 500px;
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  padding-left: 200px;
 }
-@media only screen and (min-width: 250px) and (max-width: 760px) {
-  .footer .footer__container--info {
-    display: none;
-  }
+.footer .footer__box--container .footer__container--info .container__info--titel {
+  height: 100%;
+  height: 15%;
+  font-family: "Montserrat", sans-serif;
+  padding-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-.footer .footer__container--info :hover {
+.footer .footer__box--container .footer__container--info .container__info--titel .footer__titel {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+.footer .footer__box--container .footer__container--info .box__container--info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer__box--container .footer__container--info .box__container--info .container__info {
+  width: 50%;
+}
+.footer .footer__box--container .footer__container--info .box__container--info .container__info .enlaces__preguntas {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #839192;
+}
+.footer .footer__box--container .footer__container--info .box__container--info .container__info .enlaces__preguntas :hover {
   color: blue;
+  text-decoration: underline;
 }
-
-.footer__label {
-  background-color: whitesmoke;
+.footer .footer__label {
+  background-color: black;
+  width: 100%;
+  height: 5%;
 }
 @media only screen and (min-width: 250px) and (max-width: 760px) {
-  .footer__label {
+  .footer .footer__label {
     font-size: 8px;
   }
+}
+.footer .footer__label .label__container {
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 400;
 }
 
 .button {
@@ -727,7 +788,7 @@ ul {
   border-radius: 5rem;
 }
 
-.main__hombre .hombres__section--produtos .hombres__griddcontainer .main__interactive--animation .main__producto--interactive .main__producto--agregar, .main__hombre .hombres__section--produtos .hombres__griddcontainer .main__interactive--animation .main__producto--interactive, .main__hombre .hombres__section--produtos .hombres__griddcontainer .main__interactive--animation2 .main__producto--interactive2 .main__producto--agregar, .main__hombre .hombres__section--produtos .hombres__griddcontainer .main__interactive--animation2 .main__producto--interactive2, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation2 .main__producto--interactive2, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation2 .main__producto--interactive2 .main__producto--agregar, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive .main__producto--agregar {
+.main__hombre .hombres__section--produtos .hombres__griddcontainer .main__interactive--animation .main__producto--interactive .main__producto--agregar, .main__hombre .hombres__section--produtos .hombres__griddcontainer .main__interactive--animation .main__producto--interactive, .main__hombre .hombres__section--produtos .hombres__griddcontainer .main__interactive--animation2 .main__producto--interactive2 .main__producto--agregar, .main__hombre .hombres__section--produtos .hombres__griddcontainer .main__interactive--animation2 .main__producto--interactive2, .footer .footer__box--container .Footer__logo--container, .footer .footer__box--container .footer__links--container .container__info--titel, .footer .footer__box--container .footer__container--info .container__info--titel, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation2 .main__producto--interactive2, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation2 .main__producto--interactive2 .main__producto--agregar, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive, .main__mujeres .mujeres__section--produtos .mujeres__griddcontainer .main__interactive--animation .main__producto--interactive .main__producto--agregar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1025,7 +1086,7 @@ ul {
 .main__hombre .section__hombre--baner2 {
   height: 700px;
   width: 1580px;
-  background-image: url(https://i.ibb.co/vj7F7dK/banerfootbal.png);
+  background-image: url(https://i.ibb.co/x1cDqgb/hombrebaner2otro.jpg);
   background-size: cover;
   background-position: center;
   margin: 100px 0px;
@@ -1055,33 +1116,35 @@ ul {
 .main__hombre .section__hombre--baner3 {
   height: 700px;
   width: 1580px;
-  background-image: url(https://i.ibb.co/xhSzBbb/banerstreetwear.png);
+  background-image: url(https://i.ibb.co/vj7F7dK/banerfootbal.png);
   background-size: cover;
   background-position: center;
   margin: 100px 0px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .main__hombre .section__hombre--baner3 .baner__text--container {
   width: 100%;
   height: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 70px;
+  align-items: flex-start;
+  font-size: 100px;
+  padding-left: 100px;
+  padding-top: 150px;
   flex-direction: column;
   color: whitesmoke;
 }
 .main__hombre .section__hombre--baner3 .baner__text--container .baner__text--inferior {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .main__hombre .section__hombre--baner3 .baner__text--container .baner__buton--inferior {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 20px;
 }
 .main__hombre .section__hombre--baner3 .baner__text--container .baner__buton--inferior .baner__buton {
@@ -1235,7 +1298,7 @@ ul {
 }
 .main__ayuda .ayuda__section--sercher {
   width: 100%;
-  height: 34%;
+  height: 35%;
   position: relative;
   background: url(https://images.ctfassets.net/mw19wi8id72e/37bTZXatimbjJIGJSNJ6uE/388b991316918e119aad559e6f674be3/Compressed-Image.jpg) center center/cover no-repeat;
   align-items: center;
