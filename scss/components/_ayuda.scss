@@ -3,6 +3,10 @@
     height: 2000px;
     padding-top: 110px;
 
+    @media only screen and (min-width:300px) and (max-width: 780px) {   
+        height: 1000px;
+    }
+
     .ayuda__section--sercher{
         width: 100%;
         height: 35%;
@@ -11,6 +15,16 @@
         align-items: center;
         z-index: 1;
         display: flex;
+
+        @media only screen and (min-width:300px) and (max-width: 780px) {   
+            background-size: 604px;
+            width: 472px;
+            height: 250px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            margin: 0px 0px;
+        
+          }
        
         .section__searcher--box1{
             width: 100%;
@@ -31,6 +45,10 @@
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 700;
                     font-size: 40px;
+
+                    @media only screen and (min-width:300px) and (max-width: 780px) {   
+                        font-size: 20px;
+                      }
 
                 }
             }
@@ -67,6 +85,10 @@
                         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
                         box-sizing: border-box;
                         outline: none;
+
+                        @media only screen and (min-width:300px) and (max-width: 780px) {   
+                           width: 80%;
+                          }
                         
                     }
 
@@ -93,6 +115,9 @@
         width: 100%;
         height: 65%;
 
+        @media only screen and (min-width:300px) and (max-width: 780px) {   
+            height: 100%;
+        }
 
         .section__faq--box{
             width: 100%;
@@ -100,6 +125,12 @@
             display: flex;
             justify-content: center;
             padding-top: 50px;
+
+            
+            @media only screen and (min-width:300px) and (max-width: 780px) {   
+                height: 35%;
+            
+            }
 
             .box__gridcontainer{
                 width: 70%;
@@ -112,6 +143,12 @@
                 grid-template-rows: repeat(2,1fr);
                 row-gap: 20px;
                 column-gap: 20px;
+
+                @media only screen and (min-width:300px) and (max-width: 780px) {   
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(2,100px);
+                
+                }
 
                 .grid__element{
                   
@@ -159,6 +196,10 @@
                                 font-size: 20px;
                                 font-family: 'Montserrat', sans-serif;
                                 font-weight: 800;
+                                
+                                @media only screen and (min-width:300px) and (max-width: 780px) {   
+                                    font-size: 10px;
+                                }
                             }
                         }
                     } :hover{
@@ -174,6 +215,11 @@
                         flex-direction: column;
                         justify-content: flex-start;
                         padding-top: 20px;
+
+                        @media only screen and (min-width:300px) and (max-width: 780px) {   
+                           padding-top: 0px ;
+                           justify-content: space-between;
+                        }
                         .box1__imag{
                             width: 100%;
                             height: 20%;
@@ -220,6 +266,10 @@
                                     font-family: 'Montserrat', sans-serif;
                                     font-weight: 800;
                                     font-size: 20px;
+
+                                    @media only screen and (min-width:300px) and (max-width: 780px) {   
+                                        font-size: 8px;
+                                    }
                                 }
 
                                 .opciones__datos{
@@ -232,7 +282,10 @@
                                    font-family: 'Montserrat', sans-serif;
                                    font-weight: 600;
                                    font-size: 15px;
-                                    
+
+                                    @media only screen and (min-width:300px) and (max-width: 780px) {   
+                                        font-size: 5px;
+                                    }
                                 }
 
                                 .opciones__informacion{
@@ -247,6 +300,10 @@
                                    color: blue;
                                    text-decoration: underline;
                                    cursor: pointer;
+
+                                   @media only screen and (min-width:300px) and (max-width: 780px) {   
+                                    font-size: 5px;
+                                     }
                                 }
                             }
                         }
@@ -271,6 +328,7 @@
             display: flex;
             flex-direction: column;
            
+           
 
             .box__preguntas{
                 width: 100%;
@@ -286,6 +344,11 @@
                     font-size: 25px;
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 800;
+
+                    @media only screen and (min-width:300px) and (max-width: 780px) {   
+                        font-size: 15px;
+                        align-items: flex-end;
+                    }
                 }
 
                 .preguntas__box--text{
@@ -297,6 +360,11 @@
                     font-size: 15px;
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 500;
+
+                    @media only screen and (min-width:300px) and (max-width: 780px) {   
+                        font-size: 10px;
+                        text-align: center;
+                    }
                 }
             }
 
@@ -309,6 +377,10 @@
                 width: 100%;
                 height: 50%;
                 
+                @media only screen and (min-width:300px) and (max-width: 780px) {   
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 40px);
+                }
     
                 .grid__pregunta--container{
                     background-color: white;
@@ -323,6 +395,12 @@
                     font-size: 15px;
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 800;
+
+                    @media only screen and (min-width:300px) and (max-width: 780px) {   
+                        font-size: 6px;
+                      
+                    }
+        
                 } :hover{
                     background-color: whitesmoke;
                 }

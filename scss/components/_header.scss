@@ -15,7 +15,9 @@
             height: 20px;
             display: flex;
             justify-content: center;
+            text-decoration: none;
            
+       
             .above__texto{
                 color: white;
                 font-family: 'Roboto Mono', monospace;
@@ -25,6 +27,10 @@
                 text-decoration: none;
             }
 
+           
+        }  .header__above :hover{
+            color: blue;
+            text-decoration: underline;
            
         }
 
@@ -195,14 +201,14 @@
             }
 
             @media only screen and (min-width:300px) and (max-width: 780px) {   
-               justify-content: space-evenly;
+               justify-content: space-between;
                 
              }
 
         }
 
         @media only screen and (min-width:300px) and (max-width: 780px) {   
-            max-width: 50%;
+            max-width: 100%;
             
          }
     }
