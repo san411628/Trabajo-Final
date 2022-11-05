@@ -57,57 +57,63 @@
                     .carrusel__buton--link{
                         margin: 0px 20px ;
                         width: 200px;
-
-                        
-                    .baner__index--links{
-                        text-decoration: none;
-                        font-family:'Montserrat', sans-serif;
-                        font-size: 15px;
-                        margin-left: 5px;
-                        color: whitesmoke;
-                        
+                       
+                            
+                        .baner__index--links{
+                            text-decoration: none;
+                            font-family:'Montserrat', sans-serif;
+                            font-size: 15px;
+                            margin-left: 5px;
+                            color: white;
+                            
+                            
+                        } :focus{
+                            color: blue;
+                        }
                     } 
-                    } .carrusel__buton--link :hover{
-                        color: black;
-                    }
-                }
+                } 
 
         }
 
     }
 
     .main__ADAPT{
-        padding: 2% 10%;
-        
-        background-color: whitesmoke   ;
-        border: 7px double grey;
+        width: 100%;
+        height: 200px;
+        margin-top: 50px;
+        background-color: white   ;
+        border: 1px solid #6e6e6e ;
 
-        font-size: 20px ;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
+        
 
         @media only screen and (min-width:300px) and (max-width:760px) {
             visibility: collapse;
         }
 
 
-        .informacion__titel{
-        
-            display: flex;
-            flex-direction: column;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 800;
-            color: black;
-            margin-bottom: 10px;
+        .informacion{
+            width: 100%;
+            height: 30%;
+            padding-left: 25px;
+            
+
+            .informacion__titel{
+               
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                color: black;
+                font-size: 30px;
+            }
+           
         }
 
         .informacion__core{
+            padding-left: 25px;
+            height: 70%;
+            width: 100%;
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
-            color: black;
+            color: #6e6e6e;
             font-size: 18px;
         }
     }
@@ -128,7 +134,7 @@
             padding-left: 30px;
 
             .subtitel__box{
-                font-size: 90px;
+                font-size: 70px;
                 font-family: 'Raleway';
                 font-weight: 500;
 
